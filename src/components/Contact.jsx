@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 import './Contact.css'
 
 export default function Contact() {
@@ -11,7 +12,25 @@ export default function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault()
-    setSent(true)
+
+    // Replace these with your actual EmailJS values
+    const SERVICE_ID = 'service_m1o6lka';
+    const TEMPLATE_ID = 'template_nbjxuza';
+    const PUBLIC_KEY = 'l0PjT4LiDFn7Z3Iq_';
+
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+      from_name: form.name,
+      from_email: form.email,
+      message: form.message,
+    }, PUBLIC_KEY)
+      .then(() => {
+        setSent(true);
+        setForm({ name: '', email: '', message: '' });
+      })
+      .catch((error) => {
+        alert('Failed to send message. Please try again later.');
+        console.error('EmailJS error:', error);
+      });
   }
 
   return (

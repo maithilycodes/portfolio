@@ -7,28 +7,7 @@ const projects = [
     tags: ['React', 'Vite', 'CSS'],
     emoji: '🌐',
     link: '#',
-  },
-  {
-    title: 'Design System',
-    desc: 'A comprehensive component library with tokens, variants, and documentation for scalable UI development.',
-    tags: ['Figma', 'Tokens', 'React'],
-    emoji: '🎨',
-    link: '#',
-  },
-  {
-    title: 'E-commerce App',
-    desc: 'Full-stack shopping experience with cart, auth, and payment integration. Mobile-first and accessible.',
-    tags: ['Node.js', 'MongoDB', 'React'],
-    emoji: '🛍️',
-    link: '#',
-  },
-  {
-    title: 'Dev Dashboard',
-    desc: 'Real-time analytics dashboard with live charts, filters, and dark mode for developer productivity.',
-    tags: ['TypeScript', 'D3.js', 'API'],
-    emoji: '📊',
-    link: '#',
-  },
+  }
 ]
 
 export default function Projects() {
