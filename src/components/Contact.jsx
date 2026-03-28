@@ -29,14 +29,14 @@ export default function Contact() {
               <span className="contact-icon">📍</span>
               <div>
                 <strong>Location</strong>
-                <p>Your City, Country</p>
+                <p>Pune, India</p>
               </div>
             </div>
             <div className="contact-item">
               <span className="contact-icon">📧</span>
               <div>
                 <strong>Email</strong>
-                <p>you@example.com</p>
+                <p>maithily.sugre.2@gmail.com</p>
               </div>
             </div>
           </div>

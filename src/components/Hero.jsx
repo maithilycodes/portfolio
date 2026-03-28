@@ -39,9 +39,9 @@ export default function Hero() {
   return (
     <section id="about" className="hero-section">
       <div className="hero-content">
-        <p className="hero-greeting">Hello, World! 👋</p>
+        <p className="hero-greeting">Hello,👋</p>
         <h1 className="hero-title">
-          I'm <span className="hero-name">Your Name</span>
+          I'm <span className="hero-name">Maithily</span>
         </h1>
         <h2 className="hero-role">
           I'm <span className="hero-typewriter">{displayed}</span>
